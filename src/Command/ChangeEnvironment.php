@@ -1,15 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Daniel
- * Date: 14.03.2016
- * Time: 20:38
- */
 
 namespace cisekdan\LaravelBase\Command;
 
 use Illuminate\Console\Command;
 
+/**
+ * This command can be used to switch application environment
+ * It uses symlink by default and fallbacks to copy
+ * Class ChangeEnvironment
+ * @package cisekdan\LaravelBase\Command
+ */
 class ChangeEnvironment
 {
     /**
