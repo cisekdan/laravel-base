@@ -10,7 +10,7 @@ use Illuminate\Console\Command;
  * Class ChangeEnvironment
  * @package cisekdan\LaravelBase\Command
  */
-class ChangeEnvironment
+class ChangeEnvironment extends Command
 {
     /**
      * Default config file
