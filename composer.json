@@ -20,7 +20,7 @@
   },
   "suggest": {
     "rcrowe/twigbridge": "For using Twig in Laravel",
-    "kris/laravel-form-builder": "For using Form Builder in Laravel",
+    "kris/laravel-form-builder": "For using Form Builder in Laravel"
   },
   "autoload": {
     "psr-4": {
