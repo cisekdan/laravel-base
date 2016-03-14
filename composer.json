@@ -1,0 +1,31 @@
+{
+  "name": "cisekdan/laravel-base",
+  "description": "Base functionality used in my projects",
+  "keywords": ["laravel", "personal"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Daniel Cisek",
+      "email": "cisek.dan@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "illuminate/support": "5.0.*|5.1.*|5.2.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0",
+    "squizlabs/php_codesniffer": "~1.5",
+    "satooshi/php-coveralls": "~0.6"
+  },
+  "suggest": {
+    "rcrowe/twigbridge": "For using Twig in Laravel",
+    "kris/laravel-form-builder": "For using Form Builder in Laravel",
+  },
+  "autoload": {
+    "psr-4": {
+      "cisekdan\\": "src"
+    }
+  }
+  "minimum-stability": "dev"
+}
