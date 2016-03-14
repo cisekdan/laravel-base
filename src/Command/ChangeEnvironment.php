@@ -29,6 +29,7 @@ class ChangeEnvironment extends Command
     public function __construct()
     {
         $this->buildSignature(self::CONFIG_FILE);
+        parent::__construct();
     }
 
     /**
