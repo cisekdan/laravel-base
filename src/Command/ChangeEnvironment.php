@@ -82,6 +82,6 @@ class ChangeEnvironment
     {
         $this->signature = "app:environment:change
             {env: Target environment}
-            {baseConfigFile={$environment}: Base config file (defaults to {$environment)}";
+            {baseConfigFile={$environment}: Base config file (defaults to {$environment})}";
     }
 }
