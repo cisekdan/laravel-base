@@ -25,6 +25,6 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     private function registerCommands($commands)
     {
-        $this->commands(commands);
+        $this->commands($commands);
     }
 }
