@@ -26,6 +26,6 @@
     "psr-4": {
       "cisekdan\\": "src"
     }
-  }
+  },
   "minimum-stability": "dev"
 }
