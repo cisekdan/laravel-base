@@ -3,6 +3,7 @@
 namespace cisekdan\LaravelBase\Command;
 
 use Illuminate\Console\Command;
+use \ErrorException;
 
 /**
  * This command can be used to switch application environment
@@ -52,7 +53,14 @@ class ChangeEnvironment extends Command
         {
             unlink($targetFile);
         }
-        $result = symlink($sourceFile, $targetFile);
+        try
+        {
+            $result = symlink($sourceFile, $targetFile);
+        } catch(ErrorException $e)
+        {
+            $result = copy($sourceFile, $targetFile);
+        }
+
         if (!$result)
         {
             $result = copy($sourceFile, $targetFile);
@@ -82,7 +90,7 @@ class ChangeEnvironment extends Command
     private function buildSignature($environment)
     {
         $this->signature = "app:environment:change
-            {env: Target environment}
-            {baseConfigFile={$environment}: Base config file (defaults to {$environment})}";
+            {env : Target environment}
+            {baseConfigFile={$environment} : Base config file (defaults to {$environment})}";
     }
 }
